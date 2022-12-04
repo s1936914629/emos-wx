@@ -1,0 +1,59 @@
+// 登录页面的样式
+
+// 引入公共的样式
+@import url("../../style.less");
+
+// 设置图片样式
+.logo{
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 30%;
+}
+
+// 设置主标题
+.logo-title{
+	font-size: 48rpx;
+	font-weight: bold; //文字加粗
+	text-align: center;
+	margin-top: 8%;
+	color: @font-color;
+}
+
+// 设置副标题
+.logo-subtitle{
+	font-size: 34rpx;
+	text-align: center;
+	color: @font-color;
+	margin-top: 20rpx;
+}
+
+// 设置添加按钮
+.login-btn{
+	width: 60%;
+	position: absolute;
+	bottom: 20%;
+	left: 20%;
+	background-color: @background-color;
+	color: #fff;
+	box-sizing: border-box; //保证不管给按钮增加什么，按钮不会发生变化
+	// 用伪类选择器，改变点击时的颜色
+	&:active{
+		background-color: @background-color-active;
+	}
+}
+
+// 设置链接文字
+.register-container{
+	position: absolute;
+	bottom: 50rpx;
+	width: 100%;
+	text-align: center;
+	font-size: 30rpx;
+	color: @font-color;
+	// 设置注册按钮
+	.register{
+		color: @background-color;
+	}
+}
